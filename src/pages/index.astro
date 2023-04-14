@@ -55,12 +55,18 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="c__contact">
         <h2 class="c__title mt-10 mb-2">Contact me</h2>
-        <a class="c__link"><p class="my-2">↳ heyferanmi@gmail.com</p></a>
-        <a class="c__link"><p class="my-2">↳ https://github.com/heisdeku</p></a>
-        <a class="c__link"
+        <a href="mailto:heyferanmi@gmail.com" target="_blank" class="c__link"
+          ><p class="my-2">↳ heyferanmi@gmail.com</p></a
+        >
+        <a href="https://github.com/heisdeku" target="_blank" class="c__link"
+          ><p class="my-2">↳ https://github.com/heisdeku</p></a
+        >
+        <a href="https://linkedin.com/in/feranmi-deku" target="_blank" class="c__link"
           ><p class="my-2">↳ https://linkedin.com/in/feranmi-deku</p></a
         >
-        <a class="c__link"><p class="my-2">↳ hello@olacodes.com</p></a>
+        <a href="mailto:heyferanmi@gmail.com" target="_blank" class="c__link"
+          ><p class="my-2">↳ hello@olacodes.com</p></a
+        >
       </div>
     </div>
   </main>
@@ -92,6 +98,7 @@ import Layout from "../layouts/Layout.astro";
     position: relative;
     max-width: fit-content;
     display: block;
+    text-decoration: none;
   }
   a:hover {
     opacity: 0.35;
