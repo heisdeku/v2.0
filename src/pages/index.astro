@@ -1,81 +1,176 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Oluwaferanmi Deku">
+  <main class="c_grid">
+    <h1>Oluwaferanmi Adedokun | Deku</h1>
+    <div class="c__persona">
+      <h2 class="c__title">About me</h2>
+      <p class="c__text my-2">
+        I write simple, clear and concise user focused copies that aim at
+        connecting users to the digital products they use seamlessly. learning a
+        new language and stumbling blindly across a totally unfamiliar landscape
+        makes directing users clearly around an unfamiliar product the utmost
+        priority to me when writing copies. I've collaborated with teams on fun
+        side projects, web copy redesigns and worked on few personal projects.
+      </p>
+      <h2 class="c__title mt-10 mb-2">Selected clients</h2>
+      <ul>
+        <a class="c__link">
+          <li><p class="my-2">Addidas</p></li>
+        </a>
+        <a class="c__link"><li><p class="my-2">Google</p></li></a>
+        <a class="c__link"><li><p class="my-2">Pathone Studio</p></li></a>
+        <a class="c__link"><li><p class="my-2">Davido</p></li></a>
+      </ul>
+    </div>
+    <div class="c__information">
+      <h2 class="c__title">Selected Works</h2>
+      <div class="c__works">
+        <div class="c__work">
+          <h2 class="c__work__title">2023 Recap: Panthone</h2>
+          <p class="c__work__detail">
+            I write simple, clear and concise user focused copies that aim at
+            connecting users to the digital products they use seamlessly.
+          </p>
+          <a class="c__work__link"><p class="mt-2">See Live↗</p></a>
+        </div>
+        <div class="c__work">
+          <h2 class="c__work__title">2023 Recap: Panthone</h2>
+          <p class="c__work__detail">
+            I write simple, clear and concise user focused copies that aim at
+            connecting users to the digital products they use seamlessly.
+          </p>
+          <a class="c__work__link"><p class="mt-2">See Live↗</p></a>
+        </div>
+        <div class="c__work">
+          <h2 class="c__work__title">2023 Recap: Panthone</h2>
+          <p class="c__work__detail">
+            I write simple, clear and concise user focused copies that aim at
+            connecting users to the digital products they use seamlessly.
+          </p>
+          <a class="c__work__link"><p class="mt-2">See Live↗</p></a>
+        </div>
+      </div>
+      <div class="c__contact">
+        <h2 class="c__title mt-10 mb-2">Contact me</h2>
+        <a class="c__link"><p class="my-2">↳ heyferanmi@gmail.com</p></a>
+        <a class="c__link"><p class="my-2">↳ https://github.com/heisdeku</p></a>
+        <a class="c__link"
+          ><p class="my-2">↳ https://linkedin.com/in/feranmi-deku</p></a
+        >
+        <a class="c__link"><p class="my-2">↳ hello@olacodes.com</p></a>
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  //resets
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  a,
+  p {
+    font-size: var(--font-size);
+    font-weight: normal;
+    line-height: var(--line-height);
+    color: var(--black);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    position: relative;
+    max-width: fit-content;
+    display: block;
+  }
+  a:hover {
+    opacity: 0.35;
+    transition: all 300ms ease-in-out;
+  }
+
+  /**component helper for title and texts */
+  .c__title {
+    margin-bottom: var(--font-size);
+  }
+  .c__text {
+    width: 100%;
+  }
+
+  main {
+    margin: 40px 161px 40px 1.5rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 170px;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 1120px) {
+    main {
+      display: block;
+      margin: 40px 16px;
+      overflow: auto;
+      height: auto;
+    }
+    .c__title {
+      margin-top: 38px;
+    }
+  }
+  /**links */
+  .c__link::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: var(--black);
+    bottom: -1%;
+  }
+  .c__work__link::before {
+    width: 100%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--black);
+    bottom: -1%;
+  }
+  .c__link:hover::before {
+    width: 100%;
+    transition: all 300ms ease-in-out;
+  }
+  .c__works {
+    row-gap: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .c__work__title {
+    margin: 0;
+  }
+  .c__work__detail {
+    margin: 8px 0;
+  }
+  .mt-10 {
+    margin-top: 40px;
+  }
+  .mt-2 {
+    margin-top: 8px;
+  }
+  .mb-2 {
+    margin-bottom: 8px;
+  }
+  .my-2 {
+    margin: 8px 0;
+  }
 </style>
